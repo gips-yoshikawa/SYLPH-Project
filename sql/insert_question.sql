@@ -1,8 +1,29 @@
-create table question(
-subject_number integer,
-question_number integer,
-question_text varchar(50),
-question_select varchar(80),
-constraint qs_number_pk primary key  (question_number,subject_number)
+insert into question values(
+	1,
+	1,
+	'3人の子供が三角形の各頂点に立っている。
+	これから子供たちはランダムに方向を選び、三角形の辺に沿って「点」から「点」へ同時に移動を開始する。
+	移動が1回行われる時、2人の子供が衝突する確率はどのくらいだろうか？',
+	'50%,66%,75%,85%'
 );
 
+insert into question values(
+	1,
+	2,
+	'電子レンジがある。
+	ある食べ物を温めるのに、500Wなら3分、1500Wなら1分かかる。
+	では、1000Wなら何分かかるだろうか？',
+	'1分30秒,2分,2分30秒,3分'
+);
+
+insert into answer values(
+	1,
+	1,
+	3
+);
+
+insert into answer values(
+	1,
+	2,
+	1
+);
